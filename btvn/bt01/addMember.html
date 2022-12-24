@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addMember.css">
+</head>
+<body>
+            <div>
+                <div>
+                    <label for="">Chieu Cao: </label>
+                    <input type="number" name="cao" id="_cao">
+                </div>
+                <div>
+                    <label for="">Can nang: </label>
+                    <input type="number" name="nang" id="_nang">
+                </div>
+                <div id="ketqua"></div>
+                <!-- <div id="welcomeDiv"  style="display: none;" class="answer_list" >
+                    <label for="">Năm: </label>
+                    <input type="text" name="nam" id="nam">
+                </div> -->
+                <button type="button" onclick="mbi()">Tinh Toán</button>
+            <script>
+            function mbi() {
+                // document.getElementById('welcomeDiv').style.display = "block";
+                    let cao = document.getElementById("_cao").value;
+                    let nang = document.getElementById("_nang").value;
+                    if (cao === "" && nang === "") {
+                        let message = "Field Required";
+                        document.getElementById('ketqua').innerHTML = message;
+                    } else {
+                        
+                        let ketqua;
+                        document.getElementById('ketqua').innerHTML = ketqua;
+                    }
+             }
+             
+                // function a() {
+                // document.getElementById('welcomeDiv').style.diplay = "block";
+                //     let username = document.getElementById("_username").value;
+                //     let pwd = document.getElementById("_pwd").value;
+                //     if (username === "2") {
+                //         document.getElementById("welcomeDiv").style.diplay = "block";
+                //     } else {
+                //         alert("Failed");
+                //     }
+        
+                // }
+            </script>
+            </div>
+        </section>
+    </div> 
+</body>
+</html>
