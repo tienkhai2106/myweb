@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng cơ bản</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0 auto;
+            width: 800px;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">BẢNG CƠ BẢN</h1>
+    <table >
+        <tr>
+            <th>Name</th>
+            <th>Sex</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>User A</td>
+            <td>Male</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>User B</td>
+            <td>Female</td>
+            <td>20</td>
+        </tr>
+    </table>
+</body>
+</html>
