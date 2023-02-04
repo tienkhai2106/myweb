@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="lesson4.css">
+</head>
+<body>
+    <div class="lessonName">
+        <h1>Tạo Danh Sách</h1>
+    </div>
+    <div class="content">
+        <form action="registerForm.html" method="post" style="margin: 10px;">
+            <div style="margin-bottom: 10px;">
+                <label for="_fullname">Họ và tên:</label><br>
+                <input type="text" name="fullname" id="_fullname">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="_email">Email:</label><br>
+                <input type="email" name="email" id="_email">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="_phone">Số điện thoại</label><br>
+                <input type="number" name="phone" id="_phone">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="gender">Giới tính</label><br>
+                <input type="radio" name="sex" id="_male" checked>
+                <label for="_male">Nam</label>
+                <input type="radio" name="sex" id="_female">
+                <label for="_female">Nữ</label>
+            </div>
+            <div>
+                <button type="submit">Đăng ký</button>
+            </div>          
+        </form>
+    </div>
+</body>
+</html>
