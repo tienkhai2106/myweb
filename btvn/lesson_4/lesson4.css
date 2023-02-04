@@ -1,0 +1,13 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+.lessonName {
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 2px;
+}
+.content {
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}

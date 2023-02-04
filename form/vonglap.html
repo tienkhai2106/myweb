@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="vonglap.html" method="get">
+        <label for="">SỐ A</label><br>
+        <input type="text" name="soA" id="_soA" onchange="cToF()"><br>
+        <label for="">SỐ B</label><br>
+        <input type="text" name="soB" id="_soB" >
+        <div id="getMgs"></div>
+    </form>
+    <!-- <button onclick= soNguyenTo()>Ket qua</button>
+    <div id="getMgs"></div> -->
+</body>
+<script>
+    function isFrime(number) {
+        let N = parseInt(number);
+        for(let i = 2; i < N-1; i++) {
+            if(N % i !== 0) {
+                console.log(`${number} là số nguyên tố`)
+            } else {
+                console.log(`${number} không là số nguyên tố`)
+            }
+        }
+    }
+    console.log(isFrime(13));
+</script>
+</html>
