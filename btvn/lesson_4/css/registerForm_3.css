@@ -1,0 +1,49 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+.lessonName {
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 2px;
+}
+/* body div.form_color {
+    background-color: aqua;
+    padding: 5px;
+} */
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    background-color: rgb(190, 194, 117);
+    padding: 5px;
+}
+h2 {
+    text-align: start;
+    margin: 5px;
+    /* border: 1px solid; */
+    background-color: #8dbcdf;
+    color: rgb(47, 12, 221);
+    padding: 5px;
+}
+form div label {
+    width: 10%;
+    text-align: start;
+    margin-right: 30px;
+    color: blue;
+}
+form div div.hobby_list {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form div div.hobby_item{
+    width: 30%;
+}
+form div div div label{
+    color: orange;
+}
+input {
+    border-bottom-width: thin;
+    border-right-width: thin;
+}
