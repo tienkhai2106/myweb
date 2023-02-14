@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterForm_3</title>
+    <link rel="stylesheet" href="./css/registerForm_3.css">
+</head>
+<body>
+    <div class="form_color">
+    <div class="content">
+        <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+        <form action="registerForm.html" method="post" style="margin: 10px;">
+            <div style="margin-bottom: 10px; display: flex;">
+                    <label for="_fullname">Họ và tên:</label>
+                    <input type="text" name="fullname" id="_fullname">
+            </div>
+            <div style="margin-bottom: 10px; display: flex;">
+                    <label for="_phone">Ngày Sinh</label>
+                    <input type="date" name="phone" id="_phone">
+            </div>
+            <div style="margin-bottom: 10px; display: flex;">
+                    <label for="_gender">Giới Tính</label>
+                    <div>
+                        <input type="radio" name="gender" id="_male">
+                        <label for="_male" style="color: black;" d>Nam</label>
+                        <input type="radio" name="gender" id="_female">
+                        <label for="_female" style="color: black;">Nữ</label>
+                    </div>
+            </div>
+            <div style="margin-bottom: 10px; display: flex;">
+                <label for="_address">Địa chỉ</label>
+                <textarea name="address" id="_address" cols="30" rows="5"></textarea>
+            </div>
+            <div style="margin-bottom: 10px; display: flex;">
+                <label for="_class">Lớp</label>
+                <select name="class" id="_class">
+                    <option value="default">-Chọn Lớp-</option>
+                    <option value="class_1">A1</option>
+                    <option value="class_2">A2</option>
+                </select>
+            </div>
+            <div style="margin-bottom: 10px; display: flex;">
+                    <label for="_email">Email:</label>
+                    <input type="email" name="email" id="_email">
+            </div>
+            <div style="margin-bottom: 10px; display: flex;">
+                    <label for="_phone">Điện thoại</label>
+                    <input type="number" name="phone" id="_phone">
+            </div>
+            <div  style="margin-bottom: 10px; display: flex; margin-left: 87px;">
+                <button type="submit" style="margin-right: 10px">Đăng Ký</button>
+                <button type="submit">Nhập lại</button>
+            </div>  
+                    
+        </form>
+    </div>
+    </div>
+</body>
+</html
