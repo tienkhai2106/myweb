@@ -2,17 +2,20 @@ function openForm() {
     document.getElementById("table_form").style.display = "none";
     document.getElementById("addForm").style.display = "block";
     document.getElementById("updateBtn").style.display = "none";
+    document.getElementById("search-form").style.display = "none";
 }
 function editForm() {
     document.getElementById("table_form").style.display = "none";
     document.getElementById("addForm").style.display = "block";
     document.getElementById("updateBtn").style.display = "block";
     document.getElementById("createBtn").style.display = "none";
+    document.getElementById("search-form").style.display = "none";
 }
 
 function closeForm() {
     document.getElementById("table_form").style.display = "block";
     document.getElementById("addForm").style.display = "none";
+    document.getElementById("search-form").style.display = "block";
     clearData();
 }
 
@@ -41,7 +44,7 @@ function validateFullname() {
 function validateClassrooom() {
     //Lấy dữ liệu của Lớp
     let classroomSelected = document.getElementById('classrooms').value;
-    if (classroomSelected.value == "") {
+    if (classroomSelected == "") {
         let msgRequired = "Vui lòng nhập giá trị."
         document.getElementById('msgErrorClassRoom').innerHTML = msgRequired;
     } else {
@@ -53,7 +56,7 @@ function validateClassrooom() {
 function validateGroup() {
     //lấy dữ liệu của Nhóm
     let groupSelected = document.getElementById('groups').value;
-    if (groupSelected.value == "") {
+    if (groupSelected == "") {
         let msgRequired = "Vui lòng nhập giá trị."
         document.getElementById('msgErrorGroup').innerHTML = msgRequired;
     } else {

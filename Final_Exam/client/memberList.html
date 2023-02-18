@@ -11,6 +11,22 @@
         <h1>DANH SÁCH HỌC SINH</h1>
     </header>
     <section>
+        <div style="display: flex; gap: 10px;" >
+            <div>
+                <label for="fullname-search">Họ và Tên: </label>
+                <input type="search" name="fullname" id="fullname-search">
+            </div>
+            <div>
+                <label for="classroom-search">Lớp</label>
+                <input type="search" name="classroom-search" id="classroom-search">
+            </div>
+            <div>
+                <label for="group-search">Nhóm</label>
+                <input type="search" name="group-search" id="group-search">
+            </div>
+                <button id="searchBtn" onclick="searchMember()">Tìm Kiếm</button>
+                <button id="clearBtn" onclick="resetSearch()">Reset</button>
+        </div>
         <div id="table_form">
             <div>
                 <button id="addHS" onclick="openForm()">Thêm Mới</button>
@@ -41,7 +57,7 @@
                 <span id="msgErrorClassRoom"></span>
             </div>
             <div>
-                <label for="group">Nhóm</label>
+                <label for="groups">Nhóm</label>
                 <input type="" name="groups" id="groups">
                 <span id="msgErrorGroup"></span>
             </div>
