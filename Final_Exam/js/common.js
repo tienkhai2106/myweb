@@ -2,20 +2,17 @@ function openForm() {
     document.getElementById("table_form").style.display = "none";
     document.getElementById("addForm").style.display = "block";
     document.getElementById("updateBtn").style.display = "none";
-    document.getElementById("search-form").style.display = "none";
 }
 function editForm() {
     document.getElementById("table_form").style.display = "none";
     document.getElementById("addForm").style.display = "block";
     document.getElementById("updateBtn").style.display = "block";
     document.getElementById("createBtn").style.display = "none";
-    document.getElementById("search-form").style.display = "none";
 }
 
 function closeForm() {
     document.getElementById("table_form").style.display = "block";
     document.getElementById("addForm").style.display = "none";
-    document.getElementById("search-form").style.display = "block";
     clearData();
 }
 
