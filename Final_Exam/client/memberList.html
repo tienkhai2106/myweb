@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Học Sinh</title>
+    <link rel="stylesheet" href="../css/memberList.css">
+<body>
+    <header>
+        <h1>DANH SÁCH HỌC SINH</h1>
+    </header>
+    <section>
+        <div id="table_form">
+            <div>
+                <button id="addHS" onclick="openForm()">Thêm Mới</button>
+            </div>
+            <div>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Họ và Tên</th>
+                            <th>Lớp</th>
+                            <th>Nhóm</th>
+                            <th>Thao Tác</th>
+                    </thead>
+                    <tbody id="result"></tbody>
+                </table>
+            </div>
+        </div>
+        <form class="form-popup" id="addForm" method="dialog">
+            <div>
+                <label for="fullname">Họ và Tên</label>
+                <input type="" name="fullname" id="fullname">
+                <span id="msgErrorFullname"></span>
+            </div>
+            <div>
+                <label for="classrooms">Lớp</label>
+                <input type="" name="classrooms" id="classrooms">
+                <span id="msgErrorClassRoom"></span>
+            </div>
+            <div>
+                <label for="group">Nhóm</label>
+                <input type="" name="groups" id="groups">
+                <span id="msgErrorGroup"></span>
+            </div>
+            <div>
+                <button id="createBtn" onclick="addMember()">Tạo</button>
+                <button id="updateBtn" onclick="closeForm()">Update</button>
+                <button class="cancelBtn" onclick="closeForm()">Trở Về</button>
+                
+            </div>
+        </form>
+    </section>
+    <script src="../js/common.js"></script>
+    <script src="../js/controller.js"></script>
+</head>
+</body>
+</html>
